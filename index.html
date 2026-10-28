@@ -2,29 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - Bunny Blast - Cute Block Puzzle</title>
-  <meta name="description" content="Official Privacy Policy for Bunny Blast - Cute Block Puzzle by BlueAppsBox." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Privacy Policy - Princess Run - Pac Prince Maze | BlueAppsBox</title>
+  <meta name="description" content="Official Privacy Policy for Princess Run - Pac Prince Maze (Package: com.blueapps.pacmanprincess) by BlueAppsBox. Contact: blueappsmanager@gmail.com." />
+  <meta name="author" content="BlueAppsBox" />
+  <meta name="robots" content="index, follow" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #d946ef;
-      --bg: #0f071a;
-      --card-bg: #1c0e30;
-      --card-border: #381a5c;
+      --bg-color: #0b0316;
+      --card-bg: #140727;
+      --card-border: #3b0764;
+      --primary: #ec4899;
+      --primary-hover: #db2777;
+      --primary-glow: rgba(236, 72, 153, 0.25);
+      --accent: #38bdf8;
+      --gold: #facc15;
       --text-main: #f8fafc;
       --text-muted: #cbd5e1;
-      --accent: #fde047;
+      --text-sub: #94a3b8;
+      --code-bg: #1f0b3b;
     }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-      background-color: var(--bg);
+      background-color: var(--bg-color);
       color: var(--text-main);
-      line-height: 1.65;
-      padding: 24px 16px;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7;
+      padding: 24px 16px 60px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -32,173 +40,322 @@
     }
     .container {
       width: 100%;
-      max-width: 820px;
+      max-width: 860px;
       background: var(--card-bg);
       border: 1.5px solid var(--card-border);
-      border-radius: 24px;
-      padding: 36px 28px;
-      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 30px var(--primary-glow);
+      padding: 32px 28px;
+      margin-bottom: 24px;
     }
-    .header-badge {
+    @media (max-width: 640px) {
+      .container { padding: 24px 18px; border-radius: 12px; }
+    }
+    .header {
+      border-bottom: 2px solid var(--card-border);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .badge {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(217, 70, 239, 0.15);
-      border: 1px solid rgba(217, 70, 239, 0.4);
-      padding: 6px 14px;
+      background: rgba(236, 72, 153, 0.12);
+      color: var(--primary);
+      border: 1px solid rgba(236, 72, 153, 0.4);
+      padding: 4px 10px;
       border-radius: 999px;
-      font-size: 13px;
-      font-weight: 700;
-      color: #f472b6;
-      margin-bottom: 16px;
+      font-size: 12px;
+      font-weight: 600;
     }
-    h1 { font-size: 30px; font-weight: 800; color: #ffffff; margin-bottom: 8px; }
-    .sub-meta {
-      font-size: 14px; color: var(--text-muted); margin-bottom: 24px;
-      padding-bottom: 16px; border-bottom: 1px solid var(--card-border);
-      display: flex; flex-wrap: wrap; gap: 16px;
-    }
-    .sub-meta strong { color: var(--accent); }
-    .app-card {
-      background: rgba(15, 7, 26, 0.6);
-      border: 1px solid var(--card-border);
-      border-radius: 16px;
-      padding: 16px 20px;
-      margin-bottom: 26px;
+    .badge-blue { background: rgba(56, 189, 248, 0.12); color: var(--accent); border-color: rgba(56, 189, 248, 0.4); }
+    .badge-gold { background: rgba(250, 204, 21, 0.12); color: var(--gold); border-color: rgba(250, 204, 21, 0.4); }
+    h1 { font-size: 26px; font-weight: 800; color: #ffffff; line-height: 1.3; }
+    .meta-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 12px;
-      font-size: 14px;
+      background: #0f041e;
+      border: 1px solid #2d0752;
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 10px;
+      font-size: 13px;
     }
-    .app-card div span {
-      display: block; font-size: 11px; text-transform: uppercase;
-      color: var(--text-muted); font-weight: 700;
+    .meta-item strong {
+      color: var(--accent);
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
     }
-    .app-card div strong { color: #ffffff; font-size: 14px; }
-    h2 { font-size: 20px; font-weight: 800; color: var(--accent); margin-top: 26px; margin-bottom: 10px; }
-    p { margin-bottom: 14px; color: var(--text-muted); font-size: 14.5px; }
-    ul { margin-left: 20px; margin-bottom: 16px; color: var(--text-muted); font-size: 14.5px; }
+    .meta-item span, .meta-item code { color: var(--text-main); font-weight: 500; }
+    code {
+      background: var(--code-bg);
+      color: #f472b6;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-family: monospace;
+    }
+    .section { margin-bottom: 28px; }
+    h2 {
+      font-size: 18px;
+      color: var(--gold);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid #2a084c;
+      padding-bottom: 6px;
+    }
+    p { color: var(--text-muted); font-size: 14.5px; margin-bottom: 12px; }
+    ul { margin-left: 20px; margin-bottom: 14px; color: var(--text-muted); font-size: 14.5px; }
     li { margin-bottom: 8px; }
     li strong { color: #ffffff; }
     .highlight-box {
-      background: rgba(253, 224, 71, 0.08);
-      border-left: 4px solid var(--accent);
-      padding: 14px 18px;
-      border-radius: 0 12px 12px 0;
-      margin: 18px 0;
-      font-size: 14px;
-      color: #fef08a;
+      background: rgba(236, 72, 153, 0.08);
+      border-left: 4px solid var(--primary);
+      padding: 14px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
     }
-    .contact-card {
-      background: linear-gradient(135deg, rgba(217, 70, 239, 0.15), rgba(162, 28, 175, 0.05));
-      border: 1.5px solid rgba(217, 70, 239, 0.4);
-      border-radius: 18px;
-      padding: 20px;
-      margin-top: 32px;
+    .highlight-box p { margin: 0; color: #fdf2f8; font-size: 14px; }
+    .action-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1.5px solid var(--card-border);
     }
-    .contact-card a { color: var(--accent); text-decoration: none; font-weight: 700; }
-    footer { margin-top: 24px; text-align: center; font-size: 13px; color: #64748b; }
+    .btn {
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      padding: 10px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .btn:hover { background: var(--primary-hover); box-shadow: 0 0 15px var(--primary-glow); }
+    .btn-secondary { background: #250946; border: 1px solid var(--accent); color: var(--accent); }
+    .btn-secondary:hover { background: #0284c7; color: #ffffff; }
+    .footer { text-align: center; font-size: 12px; color: var(--text-sub); line-height: 1.8; max-width: 600px; }
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #10b981;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 100;
+    }
+    .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <div class="header-badge">🔒 Privacy Policy</div>
-    <h1>Bunny Blast - Cute Block Puzzle</h1>
-    
-    <div class="sub-meta">
-      <div>Publisher: <strong>BlueAppsBox</strong></div>
-      <div>Effective Date: <strong>October 2026</strong></div>
-      <div>Status: <strong>Active &amp; Compliant</strong></div>
-    </div>
-
-    <div class="app-card">
-      <div>
-        <span>Application Title</span>
-        <strong>Bunny Blast - Cute Block Puzzle</strong>
+    <header class="header">
+      <div class="badge-row">
+        <span class="badge"></span>
+        <span class="badge badge-blue"></span>
+        <span class="badge badge-gold"> October 2026</span>
       </div>
-      <div>
-        <span>Package Identifier</span>
-        <strong>com.blueapps.cuteblockpuzzle</strong>
+      <h1>Privacy Policy for Princess Run - Pac Prince Maze</h1>
+      <p style="margin: 0;">Comprehensive transparency regarding data privacy, user rights, device storage, and advertising disclosures.</p>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <strong>Application Name</strong>
+          <span>Princess Run - Pac Prince Maze</span>
+        </div>
+        <div class="meta-item">
+          <strong>Package Name</strong>
+          <code>com.blueapps.pacmanprincess</code>
+        </div>
+        <div class="meta-item">
+          <strong>Publisher / Developer</strong>
+          <span>BlueAppsBox</span>
+        </div>
+        <div class="meta-item">
+          <strong>Official Contact</strong>
+          <span>blueappsmanager@gmail.com</span>
+        </div>
       </div>
-      <div>
-        <span>Developer / Publisher</span>
-        <strong>BlueAppsBox</strong>
-      </div>
-      <div>
-        <span>Official Support Email</span>
-        <strong>blueappsmanager@gmail.com</strong>
-      </div>
-    </div>
+    </header>
 
-    <h2>1. Overview &amp; Commitment</h2>
-    <p>
-      This Privacy Policy applies to the mobile game <strong>Bunny Blast - Cute Block Puzzle</strong>, published by <strong>BlueAppsBox</strong> ("we", "us", or "our"). We are dedicated to ensuring a secure and family-friendly experience for all players.
-    </p>
+    <main>
+      <section class="section">
+        <h2>1. Introduction & Overview</h2>
+        <p>
+          This Privacy Policy governs the manner in which <strong>BlueAppsBox</strong> ("we", "our", or "us") operates the arcade mobile game <strong>Princess Run - Pac Prince Maze</strong> (Package: <code>com.blueapps.pacmanprincess</code>).
+        </p>
+        <p>
+          We are firmly committed to maintaining user trust by ensuring that your personal privacy is unconditionally protected. Our game operates with zero personal data collection: you can enjoy all 300 palace levels without creating accounts, providing credentials, or sacrificing privacy.
+        </p>
+      </section>
 
-    <h2>2. Information Collection and Use</h2>
-    <p>
-      <strong>Bunny Blast - Cute Block Puzzle does NOT collect, store, or sell any Personally Identifiable Information (PII).</strong>
-    </p>
-    <ul>
-      <li><strong>No Account Registration:</strong> All 300 levels can be enjoyed without signing in, registering emails, or sharing credentials.</li>
-      <li><strong>No Device Media or Contact Access:</strong> The app never requests access to your photos, contacts, camera, or microphone.</li>
-      <li><strong>No Precise Location Tracking:</strong> We do not track or store your GPS location.</li>
-    </ul>
+      <section class="section">
+        <h2>2. Zero Personal Information Collected</h2>
+        <div class="highlight-box">
+          <p><strong>Strict No-Collection Policy:</strong> BlueAppsBox does NOT collect, harvest, store, sell, or transmit any Personally Identifiable Information (PII) to remote servers.</p>
+        </div>
+        <p>When you download, install, or run Princess Run - Pac Prince Maze, we never request, access, or store:</p>
+        <ul>
+          <li><strong>Personal Details:</strong> Your real name, physical address, age, national ID, or phone number.</li>
+          <li><strong>Contact Information:</strong> Your personal email address, device phonebook, or social media accounts.</li>
+          <li><strong>Geographic Location:</strong> Precise GPS coordinates or real-time location tracking.</li>
+          <li><strong>Device Sensors & Media:</strong> Microphone recordings, camera feeds, photos, videos, or external SD card files.</li>
+          <li><strong>Financial Details:</strong> Banking information, credit card numbers, or billing addresses.</li>
+        </ul>
+      </section>
 
-    <h2>3. Local Storage Data (On-Device Only)</h2>
-    <p>
-      The App uses HTML5 LocalStorage strictly on your local device to save:
-    </p>
-    <ul>
-      <li><strong>High Scores &amp; Unlocked Levels:</strong> To remember your achievements across Levels 1 to 300.</li>
-      <li><strong>Audio Preferences:</strong> To store your Sound On / Mute settings.</li>
-    </ul>
-    <p>
-      This data stays strictly on your personal phone and is never uploaded to external servers.
-    </p>
+      <section class="section">
+        <h2>3. Local Device Storage (Offline Game State)</h2>
+        <p>
+          To deliver a seamless offline arcade experience, the application utilizes standard HTML5 local storage (<code>localStorage</code>) stored strictly on your local device hardware. This data never leaves your device:
+        </p>
+        <ul>
+          <li><code>frogman_highscore</code>: Stores your highest achieved score across all games.</li>
+          <li><code>frogman_max_level</code>: Tracks your unlocked palace progression (Palace 1 up to 300).</li>
+          <li><code>frogman_muted</code>: Preserves your audio sound effect preferences.</li>
+        </ul>
+        <p>
+          You can erase all saved progress at any time by selecting <em>Clear Data / Clear Cache</em> in your device's Android Application Settings or clearing browser storage.
+        </p>
+      </section>
 
-    <h2>4. Advertising &amp; Google AdMob SDK</h2>
-    <p>
-      The Game is supported by non-intrusive advertisements served through the <strong>Google Mobile Ads (AdMob) SDK</strong>. Optional rewarded video ads allow players to revive when no moves remain.
-    </p>
-    <p>
-      Google AdMob may collect technical pseudonymous identifiers in compliance with Google Play Developer Policies, such as:
-    </p>
-    <ul>
-      <li>Google Advertising ID (GAID) — resettable anytime in your Android device settings.</li>
-      <li>Basic device model, OS version, and network country.</li>
-      <li>Ad interaction and rewarded ad completion events.</li>
-    </ul>
+      <section class="section">
+        <h2>4. Advertising & Google AdMob SDK</h2>
+        <p>
+          Princess Run - Pac Prince Maze is free-to-play and integrates <strong>Google Mobile Ads (Google AdMob)</strong>.
+        </p>
+        <p>
+          AdMob enables banner ads and optional <strong>Rewarded Video Advertisements</strong> (which allow players to annul a wedding proposal and gain +1 Life to continue running).
+        </p>
+        <p>Google AdMob may process non-sensitive device telemetry in accordance with standard advertising protocols:</p>
+        <ul>
+          <li><strong>Advertising Identifiers:</strong> Google Advertising ID (GAID / AAID) used for fraud detection, ad capping, and relevant ad serving.</li>
+          <li><strong>Diagnostic Telemetry:</strong> General network operator, device model, operating system version, and crash data.</li>
+          <li><strong>Ad Engagement:</strong> Verification of completed rewarded video views to grant in-game continues.</li>
+        </ul>
+        <p>
+          <strong>User Control:</strong> You can reset your Advertising ID or opt out of personalized advertisements at any time through your Android device settings: <em>Settings &gt; Google &gt; Ads</em>.
+        </p>
+      </section>
 
-    <h2>5. Children’s Online Privacy Protection (COPPA &amp; GDPR-K)</h2>
-    <div class="highlight-box">
-      <strong>Family &amp; Child Safety:</strong> Bunny Blast - Cute Block Puzzle is safe for children and families. We adhere strictly to COPPA, GDPR-K, and Google Play Families Policy guidelines. All ad requests follow child-directed settings where required.
-    </div>
+      <section class="section">
+        <h2>5. Application Permissions</h2>
+        <p>
+          Princess Run - Pac Prince Maze requests only standard, non-sensitive Android permissions:
+        </p>
+        <ul>
+          <li><code>android.permission.INTERNET</code>: Required strictly to load AdMob ad units and web assets.</li>
+          <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Used by the Google Mobile Ads SDK to verify network availability.</li>
+        </ul>
+        <p>No dangerous or sensitive runtime permissions are requested.</p>
+      </section>
 
-    <h2>6. Data Deletion &amp; Control</h2>
-    <p>
-      You have full control over your local game data:
-    </p>
-    <ul>
-      <li><strong>Clear Storage:</strong> Go to <em>Android Settings &gt; Apps &gt; Bunny Blast - Cute Block Puzzle &gt; Storage &gt; Clear Data</em> to wipe all local stats.</li>
-      <li><strong>Uninstall:</strong> Uninstalling the application automatically deletes all stored game state.</li>
-    </ul>
+      <section class="section">
+        <h2>6. Children's Privacy (COPPA & GDPR-K Compliance)</h2>
+        <p>
+          Princess Run - Pac Prince Maze is designed as wholesome, family-friendly casual entertainment suitable for all ages. We do not knowingly collect, solicit, or share personal information from children under 13 (or under 16 in the European Economic Area).
+        </p>
+      </section>
 
-    <div class="contact-card">
-      <h3 style="font-size:18px; margin-bottom:8px; color:#ffffff;">Contact &amp; Support</h3>
-      <p style="margin-bottom:6px;">🏢 <strong>Company:</strong> BlueAppsBox</p>
-      <p style="margin-bottom:6px;">✉️ <strong>Email:</strong> <a href="mailto:blueappsmanager@gmail.com">blueappsmanager@gmail.com</a></p>
-      <p style="margin-bottom:0;">📱 <strong>Package ID:</strong> <code>com.blueapps.cuteblockpuzzle</code></p>
+      <section class="section">
+        <h2>7. Data Security Architecture</h2>
+        <p>
+          Because Princess Run - Pac Prince Maze operates client-side and does not operate backend authentication servers or remote user databases, your game interactions are immune to remote database breaches.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>8. Contact Information</h2>
+        <p>
+          For questions, feedback, or legal inquiries regarding this Privacy Policy or Princess Run - Pac Prince Maze, please reach out directly:
+        </p>
+        <div class="meta-grid">
+          <div class="meta-item">
+            <strong>Developer / Publisher</strong>
+            <span>BlueAppsBox</span>
+          </div>
+          <div class="meta-item">
+            <strong>Support & Privacy Email</strong>
+            <span>blueappsmanager@gmail.com</span>
+          </div>
+          <div class="meta-item">
+            <strong>Application Identifier</strong>
+            <code>com.blueapps.pacmanprincess</code>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="action-bar">
+      <button class="btn" id="btnCopyEmail">📋 Copy Contact Email</button>
+      <button class="btn btn-secondary" id="btnPrint">🖨️ Print Policy</button>
+      <a class="btn btn-secondary" href="mailto:blueappsmanager@gmail.com?subject=Privacy%20Inquiry%20-%20Princess%20Run">✉️ Send Email Inquiry</a>
     </div>
   </div>
 
-  <footer>
-    &copy; 2026 BlueAppsBox. All rights reserved. &bull; Bunny Blast - Cute Block Puzzle
+  <footer class="footer">
+    &copy; 2026 BlueAppsBox. All rights reserved.<br>
+    Princess Run - Pac Prince Maze &bull; Package: com.blueapps.pacmanprincess<br>
+    Official Privacy Policy Document for Google Play Store Listing
   </footer>
 
+  <div id="toast" class="toast">Email copied to clipboard!</div>
+
   <script>
-    console.log("Privacy Policy ready for com.blueapps.cuteblockpuzzle by BlueAppsBox");
+    const btnCopyEmail = document.getElementById('btnCopyEmail');
+    const toast = document.getElementById('toast');
+
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => { toast.classList.remove('show'); }, 2500);
+    }
+
+    if (btnCopyEmail) {
+      btnCopyEmail.addEventListener('click', () => {
+        const email = 'blueappsmanager@gmail.com';
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(email).then(() => {
+            showToast('Email copied: ' + email);
+          }).catch(() => {
+            prompt('Copy email address:', email);
+          });
+        } else {
+          prompt('Copy email address:', email);
+        }
+      });
+    }
+
+    const btnPrint = document.getElementById('btnPrint');
+    if (btnPrint) {
+      btnPrint.addEventListener('click', () => { window.print(); });
+    }
   </script>
 </body>
 </html>
